@@ -32,7 +32,6 @@
 |
 ├── notebooks        <- Jupyter, Weave or any other mixed media notebooks.
 │
-├── papers           <- Scientific papers resulting from the project.
 │
 ├── scripts          <- Various scripts, e.g. simulations, plotting, analysis,
 │   │                   The scripts use the `src` folder for their base code.
