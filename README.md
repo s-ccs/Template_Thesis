@@ -32,7 +32,6 @@
 |
 ├── notebooks        <- Jupyter, Weave or any other mixed media notebooks.
 │
-│
 ├── scripts          <- Various scripts, e.g. simulations, plotting, analysis,
 │   │                   The scripts use the `src` folder for their base code.
 │
@@ -47,8 +46,7 @@
 ├── README.md        <- Top-level README. A fellow student needs to be able to
 |   |                   continue your project. Think about her!!
 |
-├── .gitignore       <- by default ignores _research, data, plots, videos,
-│                       notebooks and latex-compilation related files.
+├── .gitignore       <- focused on Julia, but some Matlab things as well
 │
 ├── (Manifest.toml)  <- Contains full list of exact package versions used currently.
 |── (Project.toml)   <- Main project file, allows activation and installation.
