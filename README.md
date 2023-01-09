@@ -15,6 +15,8 @@
 >If a fellow student wants to reproduce all your results. What scripts, in which order, with which data need to be run?
 >
 >Be as specific as possible. Plan to spend **at least 1h** on this.
+>
+>Optional: Add a pipeline plot in which the different steps are displayed together with the corresponding scripts.
 
 ## Overview of Folder Structure 
 
