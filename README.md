@@ -27,12 +27,15 @@
 ├── report           <- **Immutable and add-only!**
 │   ├── proposal     <- Proposal PDF
 │   ├── thesis       <- Final Thesis PDF
-│   ├── talks        <- PDFs (and optionally pptx etc) of Mid&Final-Talk
+│   ├── talks        <- PDFs (and optionally pptx etc) of the Intro,
+|   |                   Midterm & Final-Talk
 |
 ├── _research        <- WIP scripts, code, notes, comments,
 │   |                   to-dos and anything in an alpha state.
 │
-├── plots            <- All exported plots go here, best in date folders
+├── plots            <- All exported plots go here, best in date folders.
+|   |                   Note that to ensure reproducibility it is required that all plots can be
+|   |                   recreated using the plotting scripts in the scripts folder.
 |
 ├── notebooks        <- Pluto, Jupyter, Weave or any other mixed media notebooks.*
 │
@@ -58,4 +61,4 @@
                         
 ```
 
-*Instead of having a separate *notebooks* folder, you can also delete it and integrate your notebooks in the scripts folder. However, notebooks should always be marked by adding `nb_` in front of the file name.
+\*Instead of having a separate *notebooks* folder, you can also delete it and integrate your notebooks in the scripts folder. However, notebooks should always be marked by adding `nb_` in front of the file name.
