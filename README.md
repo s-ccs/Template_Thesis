@@ -34,7 +34,7 @@
 │
 ├── plots            <- All exported plots go here, best in date folders
 |
-├── notebooks        <- Pluto, Jupyter, Weave or any other mixed media notebooks.[^1]
+├── notebooks        <- Pluto, Jupyter, Weave or any other mixed media notebooks.*
 │
 ├── scripts          <- Various scripts, e.g. simulations, plotting, analysis,
 │   │                   The scripts use the `src` folder for their base code.
@@ -58,4 +58,4 @@
                         
 ```
 
-[^1]: Instead of having a separate *notebooks* folder, you can also delete it and integrate your notebooks in the scripts folder. However, notebooks should always be marked by adding `nb_` in front of the file name.
+*Instead of having a separate *notebooks* folder, you can also delete it and integrate your notebooks in the scripts folder. However, notebooks should always be marked by adding `nb_` in front of the file name.
