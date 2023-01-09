@@ -34,7 +34,7 @@
 │
 ├── plots            <- All exported plots go here, best in date folders
 |
-├── notebooks        <- Jupyter, Weave or any other mixed media notebooks.
+├── notebooks        <- Pluto, Jupyter, Weave or any other mixed media notebooks.[^1]
 │
 ├── scripts          <- Various scripts, e.g. simulations, plotting, analysis,
 │   │                   The scripts use the `src` folder for their base code.
@@ -57,3 +57,5 @@
 └── (Requirements.txt)<- in case of python project - can also be an anaconda file, MakeFile etc.
                         
 ```
+
+[^1]: Instead of having a separate *notebooks* folder, you can also delete it and integrate your notebooks in the scripts folder. However, notebooks should always be marked by adding `nb_` in front of the file name.
