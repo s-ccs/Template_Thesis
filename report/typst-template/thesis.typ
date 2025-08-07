@@ -70,7 +70,7 @@
   listing-index: false,
   abbreviations: abbreviations,
   date: datetime(year: 2025, month: 6, day: 1),
-  bibliography: bibliography("refs.bib", title: "Bibliography", style: "ieee"),
+  bibliography: bibliography("refs.bib", title: "Bibliography", style: "american-psychological-association"),
 )
 
 // Code blocks
