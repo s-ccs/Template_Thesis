@@ -14,19 +14,7 @@
   todo(text, inline: true)
 }
 
-// #let goal = (text) => {
-//   // show figure: set align(left) 
-//   // show figure: set 
-//   figure(
-//     [#text],
-//     gap: -10pt,
-//     supplement: [Goal],
-//     kind: "goal",
-//     outlined: false,
-//     numbering: "A"
-//   )
-// }
-
+// make it possible to click and refer back to goals by creating a custom figure type 
 #let goal = (text) => {
   figure(
     [

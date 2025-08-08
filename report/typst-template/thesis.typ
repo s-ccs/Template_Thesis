@@ -91,41 +91,80 @@
 // If you wish to use lining figures rather than old-style figures, uncomment this line.
 // #set text(number-type: "lining")
 
+// import custom utilities
+#import "utils/general-utils.typ": *
 
 // Main Content starts here
-
-// Proposal Phase:
 = Introduction <chp:introduction>
-== Motivation
-This is the motivation for your project. Why is it interesting?
-== Other work
-Here you add all the Background findings, citing different studies and the likes. You do not need to include text-book knowledge e.g. how exactly EEG works, except if you are working on the topic and require the detail. Think of writing this proposal for a fellow student, but one that was in the EEG/ET-courses already.
+
+Why does the thesis matter? Give context for the thesis, explain the research gap and provide a summary.
+
+
+#underline[*Note:*] The suggested structure in this template is loosely based on the rules in #pc[@Mensh2017-vd]. It can be adapted to suit the requirements of a Bachelor/Master thesis. 
+
+The figure below is the updated version provided by #pc[@The_PLOS_Computational_Biology_Staff2017-gr].
+
+#figure(
+  image("template/assets/pcbi.1005830.g001.tiff", width: 70%),
+  caption: "Figure describing a suggested paper structure"
+)
+
+
+== Background
+Describe the background of the thesis topic, along with the research gap to be filled or the problem to be solved.
+
+== Research questions
+You may write about your research questions here.
+
+== Important terms
+If there are terms that will be used throughout the thesis but could be unfamiliar to the reader, you may define them here.
 
 //
 // NOTE:
 // It's important to have explicit pagebreaks between each chapter,
 // otherwise header stylings from the template might break
 #pagebreak()
-= Planned Project
-== Research Question
-What is the main guiding question(s) you want to answer?
+= Chapter on a specific topic
+Write about a particular topic that you think needs a separate chapter, e.g. an important concept having a lot of background to cover.
 
-== Approach
-How are you going to answer them?
+#pagebreak()
+= Methods
+Describe the method(s) used.
 
-== Goals
-Here you define the goals you really want to reach, and the stretch goals. Please link (via e.g. wording) the respective goal list to the respective paragraphs in the previous section `Approach`
-=== Main Goals
-1. I want to finish this Proposal
-2. I want to finish my Thesis
-=== Stretch Goals
-1. I'll do another thesis if there is time
+== Execution details
+If required, explain how the method was followed.
+
+== Quick tips on using this template
+
+By default, using the `@` syntax to reference a source from the bibliography shows the citation in brackets @Mensh2017-vd. To get a prose citation, use the utility function `#pc[@source]` like so: #pc[@Mensh2017-vd].
+
+Mark TODOs using the `#todo("Do this!")` function. It shows up in large red letters #todo("Do this!") and breaks up the paragraph.
+
+Inline TODOs can be added using the custom utility function`#ilt[TODO text]` which shows the #ilt[TODO text] within the same line yet clearly visible.
+
+#pagebreak()
+= Results
+Present, describe and summarize the results obtained. 
 
 
 #pagebreak()
-= Plan
-Some 3-4 sentences on the order, but mainly focus on the time-table. Note that every planning time-table is subject to change and adaptation during the project. It is a first orientation, but should be discussed and adapted regularly
+= Discussion
 
+== Interpretation
+Write about the interpretation of the results and explain how the identified research gap was filled.
+
+== Limitations
+What limitations does the interpretation have? How can this be fixed?
+
+== Outlook / Future Scope
+What difference was made by the work done on the thesis, and how can it be expanded on in the future?
+
+
+#pagebreak()
+= Summary
+Recap what was discussed.
 
 = Other chapters
+The further chapters give detailed information on the template. They have been included from a separate typst file and can be omitted by commenting out or deleting the `#include` line following this chapter in the source code. 
+
 #include "template/demo/main.typ"
