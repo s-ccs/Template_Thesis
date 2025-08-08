@@ -7,11 +7,11 @@
 
 #set align(center)
 #text(
-  heading("A Bachelor/Master thesis proposal", numbering: none, outlined: false), size: 1.15em
+  heading("A Bachelor/Master Thesis Proposal", numbering: none, outlined: false), size: 1.15em
 )
 #v(14pt)
 
-#text("Master Thesis Proposal - <student name>
+#text("<degree> Thesis Proposal - <student name>
 June 2025")
 \
 
@@ -19,7 +19,6 @@ June 2025")
 #line(length: 100%, stroke: gray)
 
 #set align(left)
-// #set heading(numbering: (x, ..xs) => numbering("1.", ..xs))
 #set heading(numbering: "1.")
 
 
@@ -40,13 +39,13 @@ Yet another subtopic.
 \
 = Planned Project
 == Research Question
-What is the main guiding question(s) you want to answer?
+What is the main guiding question(s) you want to answer? For example,
 + Is it easy to generate research questions?
 + How many research questions does a proposal need?
 + What is the answer to the question of Life, the Universe, and Everything?
 
 == Goals
-Here you define the goals you really want to reach, and the stretch goals. Please link the respective goal to the respective paragraphs in the section `Approach` @approach, via e.g. wording or using the syntax shown.
+Here you define the goals you really want to reach, and the stretch goals. Please link the respective goal to the respective paragraphs in the section `Approach` (@approach), via e.g. wording or using the syntax shown.
 
 === Main Goals <mainGoals>
 #v(0.3em)
@@ -69,17 +68,15 @@ Here you define the goals you really want to reach, and the stretch goals. Pleas
 ]
 
 == Approach <approach>
-How are you going to answer the research questions?
+How are you going to answer the research questions? For example:
 
-A thesis proposal will be written at first (*@goal1*). For *@goal2*, further steps are required. Here you see how to link back to the goals A,B,...,N.
-
-If time permits, further tasks can be taken up based on the list of stretch goals (*@goal3*, *@goal4*).
+A thesis proposal will be written at first (*@goal1*). For *#underline[@goal2]*, further steps are required. Here in the source code you can see how to link back to the goals A,B,...,N. Click on the corresponding goal-number text (#underline[@goal3], *@goal4*) to go to the respective goal in the list, and change the formatting as per your wish - see the source code.
 
 \
 
 = Plan
 \
-Some 3-4 sentences on the order, but mainly focus on the time-table. Note that every planning time-table is subject to change and adaptation during the project. It is a first orientation, but should be discussed and adapted regularly.
+Write some 3-4 sentences on the order, but mainly focus on the time-table. Note that every planning time-table is subject to change and adaptation during the project. It is a first orientation, but should be discussed and adapted regularly.
 
 
 

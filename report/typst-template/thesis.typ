@@ -100,12 +100,12 @@
 Why does the thesis matter? Give context for the thesis, explain the research gap and provide a summary.
 
 
-#underline[*Note:*] The suggested structure in this template is loosely based on the rules in #pc[@Mensh2017-vd]. It can be adapted to suit the requirements of a Bachelor/Master thesis. 
+#underline[*Note:*] The suggested structure in this template is loosely based on the summarized figure presented in #pc[@Mensh2017-vd]. It can be adapted to suit the requirements of a Bachelor/Master thesis. 
 
-The figure below is the updated version provided by #pc[@The_PLOS_Computational_Biology_Staff2017-gr].
+Below is the updated version provided by #pc[@The_PLOS_Computational_Biology_Staff2017-gr].
 
 #figure(
-  image("template/assets/pcbi.1005830.g001.tiff", width: 70%),
+  image("template/assets/pcbi.1005830.g001.png", width: 70%),
   caption: "Figure describing a suggested paper structure"
 )
 
