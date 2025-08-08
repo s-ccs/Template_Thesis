@@ -102,11 +102,12 @@ Why does the thesis matter? Give context for the thesis, explain the research ga
 
 #underline[*Note:*] The suggested structure in this template is loosely based on the summarized figure presented in #pc[@Mensh2017-vd]. It can be adapted to suit the requirements of a Bachelor/Master thesis. 
 
-Below is the updated version provided by #pc[@The_PLOS_Computational_Biology_Staff2017-gr].
+Below is the updated version of the figure (citation included in the caption).
 
 #figure(
   image("template/assets/pcbi.1005830.g001.png", width: 70%),
-  caption: "Figure describing a suggested paper structure"
+  caption: "Figure describing a suggested paper structure.
+    Reproduced from " + pc[@The_PLOS_Computational_Biology_Staff2017-gr] + "."
 )
 
 
