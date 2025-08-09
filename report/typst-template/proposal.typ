@@ -31,7 +31,7 @@ This is the motivation for your project. Why is it interesting?
 Here you add all the background findings, citing different studies and the like. You do not need to include text-book knowledge e.g. how exactly EEG works, except if you are working on the topic and require the detail. Think of writing this proposal for a fellow student, but one that was in the EEG/ET-courses already.
 
 === Subheading 1
-Use this if you need to write about a topic in more detail. You can also refer to sources in your bibliography @QayyumY-sac2022.
+Use this if you need to write about a topic in more detail. You can also refer to sources in your bibliography @QayyumY-sac2022. Prose citations, e.g. "according to #pc[@QayyumY-sac2022]" are also possible.
 
 === Subheading 2
 Yet another subtopic.
