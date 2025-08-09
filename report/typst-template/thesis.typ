@@ -117,8 +117,8 @@ Describe the background of the thesis topic, along with the research gap to be f
 == Research questions
 You may write about your research questions here.
 
-== Important terms
-If there are terms that will be used throughout the thesis but could be unfamiliar to the reader, you may define them here.
+== Summary
+Sum up the approach and results.
 
 //
 // NOTE:
@@ -126,14 +126,14 @@ If there are terms that will be used throughout the thesis but could be unfamili
 // otherwise header stylings from the template might break
 #pagebreak()
 = Chapter on a specific topic
-Write about a particular topic that you think needs a separate chapter, e.g. an important concept having a lot of background to cover.
+Write about a particular topic if you think it needs a separate chapter, e.g. an important concept having a lot of background to cover.
 
 #pagebreak()
 = Methods
 Describe the method(s) used.
 
 == Execution details
-If required, explain how the method was followed.
+If applicable, explain how the method was followed.
 
 == Quick tips on using this template
 
@@ -141,7 +141,7 @@ By default, using the `@` syntax to reference a source from the bibliography sho
 
 Mark TODOs using the `#todo("Do this!")` function. It shows up in large red letters #todo("Do this!") and breaks up the paragraph.
 
-Inline TODOs can be added using the custom utility function`#ilt[TODO text]` which shows the #ilt[TODO text] within the same line yet clearly visible.
+Inline TODOs can be added using the custom utility function`#ilt[TODO text]` which shows the #ilt[TODO text] within the same line yet clearly standing out.
 
 #pagebreak()
 = Results
