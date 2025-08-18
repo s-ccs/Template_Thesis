@@ -1,131 +1,111 @@
-// A central place where libraries are imported (or macros are defined)
-// which are used within all the chapters:
-#import "utils/global.typ": *
+#import "utils/general-utils.typ": * 
+#import "template/styles.typ": *
 
+#set document(title: "Thesis Proposal") // Note: this title is visible in the PDF viewer
 
-// Fill me with the Abstract
-#let abstract = [#lorem(150)]
+#show: styles
 
-// Fill me with acknowledgments
-#let acknowledgements = [#lorem(50)]
-
-
-// if you have appendices, add them here
-#let appendix = [
-  = Appendices
-  //#include "./chapters/appendix.typ"
-]
-
-// Put your abbreviations/acronyms here.
-// 'key' is what you will reference in the typst code
-// 'short' is the abbreviation (what will be shown in the pdf on all references except the first)
-// 'long' is the full acronym expansion (what will be shown in the first reference of the document)
-//
-// In the text, call @eeg or @uniS to reference  the shortcode
-#let abbreviations = (
-  (
-    key: "eeg",
-    short: "EEG",
-    long: "Electroencephalography",
-  ),
-  (
-    key: "uniS",
-    short: "UoS",
-    long: "University of Stuttgart",
-  ),
+#set align(center)
+#text(
+  heading("A Bachelor/Master Thesis Proposal", numbering: none, outlined: false), size: 1.15em
 )
+#v(14pt)
 
-#show: thesis.with(
-  author: "<author>",
-  title: "<title>",
-  degree: "<degree>",
-  faculty: "Faculty of Electrical Engineering and Computer Science",
-  department: "Computational Cognitive Science",
-  major: "<major>",
-  supervisors: (
-    (
-      title: "Main Supervisor",
-      name: "Benedikt Ehinger",
-      affiliation: [Computational Cognitive Science \
-        Faculty of Electrical Engineering and Computer Science, \
-        Department of Computer Science
-      ],
-    ),
-    (
-      title: "Second Supervisor",
-      name: "Max Mustermann",
-      affiliation: [Computational Cognitive Science \
-        Faculty of Electrical Engineering and Computer Science, \
-        Department of Computer Science
-      ],
-    ),
-  ),
-  epigraph: none,
-  abstract: abstract,
-  appendix: appendix,
-  acknowledgements: acknowledgements,
-  preface: none,
-  figure-index: false,
-  table-index: false,
-  listing-index: false,
-  abbreviations: abbreviations,
-  date: datetime(year: 2025, month: 6, day: 1),
-  bibliography: bibliography("refs.bib", title: "Bibliography", style: "ieee"),
-)
-
-// Code blocks
-#codly(
-  languages: (
-    rust: (
-      name: "Rust",
-      color: rgb("#CE412B"),
-    ),
-    // NOTE: Hacky, but 'fs' doesn't syntax highlight
-    fsi: (
-      name: "F#",
-      color: rgb("#6a0dad"),
-    ),
-  ),
-)
-
-// If you wish to use lining figures rather than old-style figures, uncomment this line.
-// #set text(number-type: "lining")
+#text("<degree> Thesis Proposal - <student name>
+June 2025")
+\
 
 
-// Main Content starts here
+#line(length: 100%, stroke: gray)
 
-// Proposal Phase:
-= Introduction <chp:introduction>
+#set align(left)
+#set heading(numbering: "1.")
+
+
+= Introduction
+
 == Motivation
 This is the motivation for your project. Why is it interesting?
-== Other work
-Here you add all the Background findings, citing different studies and the likes. You do not need to include text-book knowledge e.g. how exactly EEG works, except if you are working on the topic and require the detail. Think of writing this proposal for a fellow student, but one that was in the EEG/ET-courses already.
 
-//
-// NOTE:
-// It's important to have explicit pagebreaks between each chapter,
-// otherwise header stylings from the template might break
-#pagebreak()
+== Other work
+Here you add all the background findings, citing different studies and the like. You do not need to include text-book knowledge e.g. how exactly EEG works, except if you are working on the topic and require the detail. Think of writing this proposal for a fellow student, but one that was in the EEG/ET-courses already.
+
+=== Subheading 1
+Use this if you need to write about a topic in more detail. You can also refer to sources in your bibliography @QayyumY-sac2022. Prose citations, e.g. "according to #pc[@QayyumY-sac2022]" are also possible.
+
+=== Subheading 2
+Yet another subtopic.
+
+\
 = Planned Project
 == Research Question
-What is the main guiding question(s) you want to answer?
-
-== Approach
-How are you going to answer them?
+What is the main guiding question(s) you want to answer? For example,
++ Is it easy to generate research questions?
++ How many research questions does a proposal need?
++ What is the answer to the question of Life, the Universe, and Everything?
 
 == Goals
-Here you define the goals you really want to reach, and the stretch goals. Please link (via e.g. wording) the respective goal list to the respective paragraphs in the previous section `Approach`
-=== Main Goals
-1. I want to finish this Proposal
-2. I want to finish my Thesis
-=== Stretch Goals
-1. I'll do another thesis if there is time
+Here you define the goals you really want to reach, and the stretch goals. Please link the respective goal to the respective paragraphs in the section `Approach` (@approach), via e.g. wording or using the syntax shown.
+
+=== Main Goals <mainGoals>
+#v(0.3em)
+#set enum(numbering: "A.")
+
+#[
+  #show figure: set align(left) 
+  + #goal("I want to finish this Proposal.") <goal1>  
+  + #goal("I want to finish my Thesis.") <goal2>
+]
 
 
-#pagebreak()
+=== Stretch Goals <stretchGoals>
+#v(0.3em)
+#set enum(numbering: "A.", start: 3) // continue the numbering from where the main goals left off. Adjust `start` depending on how many main goals you have.
+#[
+  #show figure: set align(left) 
+  + #goal("I'll do another thesis if there is time.") <goal3>
+  + #goal("Maybe another one as well.") <goal4>
+]
+
+== Approach <approach>
+How are you going to answer the research questions? For example:
+
+A thesis proposal will be written at first (*@goal1*). For *#underline[@goal2]*, further steps are required. Here in the source code you can see how to link back to the goals A,B,...,N. Click on the corresponding goal-number text (#underline[@goal3], *@goal4*) to go to the respective goal in the list, and change the formatting as per your wish - see the source code.
+
+\
+
 = Plan
-Some 3-4 sentences on the order, but mainly focus on the time-table. Note that every planning time-table is subject to change and adaptation during the project. It is a first orientation, but should be discussed and adapted regularly
+\
+Write some 3-4 sentences on the order, but mainly focus on the time-table. Note that every planning time-table is subject to change and adaptation during the project. It is a first orientation, but should be discussed and adapted regularly.
 
 
-= Other chapters
-#include "template/demo/main.typ"
+
+#timeliney.timeline(
+  show-grid: true,
+  {
+    import timeliney: *
+      
+    headerline(group([*Jun*],[*Jul*],[*Aug*],[*Sept*],[*Oct*],[*Nov*]))
+    
+    task("Literature review", (0, 1), style: (stroke: 2pt + gray))
+    task("Writing Proposal (Goal A)", (0.5, 2), style: (stroke: 2pt + gray))
+    task("Thesis work (Goal B)", (1, 4), style: (stroke: 2pt + gray))
+    task("Buffer / Review / Stretch goals (Goal C-D)", (4,6), style: (stroke: 2pt + gray))
+
+    milestone(
+      at: 4,
+      style: (stroke: (dash: "dashed")),
+      align(center, [
+        *Main goal completion*\
+        Sept 2025
+      ])
+    )
+  }
+)
+
+
+
+
+#line(length: 100%, stroke: gray)
+
+#bibliography("refs.bib", style: "american-psychological-association")
