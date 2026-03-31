@@ -10,10 +10,15 @@
 #let acknowledgements = [#lorem(50)]
 
 
+// Declaration regarding own work / AI use: adapted from the guidelines of the Computer Science Department, Faculty 5, Uni-Stuttgart 
+#let declaration = [
+  #include "declaration.typ"
+]
+
 // if you have appendices, add them here
 #let appendix = [
   = Appendices
-  //#include "./chapters/appendix.typ"
+  #include "appendix.typ"
 ]
 
 // Put your abbreviations/acronyms here.
@@ -71,6 +76,7 @@
   abbreviations: abbreviations,
   date: datetime(year: 2025, month: 6, day: 1),
   bibliography: bibliography("refs.bib", title: "Bibliography", style: "american-psychological-association"),
+  declaration: declaration
 )
 
 // Code blocks

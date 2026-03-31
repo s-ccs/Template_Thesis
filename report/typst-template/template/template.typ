@@ -365,6 +365,8 @@
   listing-index: true,
   // List of abbreviations
   abbreviations: none,
+  // Declaration
+  declaration: none,
   // The content of your work.
   body,
 ) = {
