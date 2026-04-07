@@ -9,7 +9,7 @@ I hereby declare that the work presented in this thesis is entirely my own. I di
 
 In Appendix "Use of AI Tools" I have documented to what extent AI tools were used for generating any significant parts of this work. By submitting this work, I assume full responsibility for all content. I have taken notice of and I comply with the _Principles for the Use of Artificial Intelligence by Students at the University of Stuttgart_.
 
-Neither this work nor significant parts of it were part of another examination procedure. I have not published this work in whole or in part before. The electronic copy is consistent with all submited hard copies.
+Neither this work nor significant parts of it were part of another examination procedure. I have not published this work in whole or in part before. The electronic copy is consistent with all submitted hard copies.
 
 Date and signature of the student:
 
